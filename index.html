@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <video src="RooftopClouds.mp4" muted loop autoplay></video>
+    <div class="weather-text">
+        <h1>My Weather App</h1>
+        <div class="location">
+            <h2>Weather of your Current Location&nbsp;:&nbsp;</h2>
+            <div class="area-location"></div>
+            <img src="" id="weather-icon">
+        </div>
+        <div class="weather-info">
+            <div class="temperature">
+                <h3>Temperature&nbsp:&nbsp</h3>
+                <div class="degree"></div>
+            </div>
+            <div class="line"></div>
+            <div class="humidity-info">
+                <h3>Humidity&nbsp : &nbsp</h3>
+            <div class="humidity"></div>
+            </div>
+            <div class="line"></div>
+            <div class="wind-speed">
+                <h3>Wind Speed&nbsp:&nbsp</h3>
+                <div class="speed"></div>
+            </div>
+        </div>
+        <br><br>
+        <div class="description">
+            <h3>Description&nbsp:&nbsp</h3>
+            <h3 id="weather-desc"></h3>
+        </div>
+        <br><br>
+        <div class="input-location" placeholder="location">
+           <form id="myform">
+               <label for="">Select City:  &nbsp</label>
+               <input type="text" id="city" placeholder="Enter Location">
+               <input type="submit" value="Get Weather Status">
+           </form>
+        </div>
+    </div>
+    <!--
+    <script>
+        var autocomplete;
+        function initMap(){
+            autocomplete = new google.maps.places.Autocomplete(document.getElementById('city'),{
+                types: ['establishment'],
+                componentRestrictions : {'country':'IND'},
+                fields: ['place_id','geometry','name']
+            });
+        }
+    </script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8TvD268JLnSrH1T_JNzx3IOqCASK41dY&libraries=places&callback=initMap">-->
+</script>
+    <script src="script.js"></script>
+</body>
+
+</html>

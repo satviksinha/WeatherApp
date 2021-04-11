@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+video{
+    width:100%;
+    height:100vh;
+    object-fit: cover;
+    position:relative;
+    opacity:0.9;
+}
+.weather-text{
+    position:absolute;
+    top:5rem;
+    left:30%;
+    margin:auto;
+    color:white;
+    text-align: center;
+}
+.weather-text h1{
+    height:30vh;
+    mix-blend-mode: difference;
+    transition:1s;
+}
+.weather-text h2,h3{
+    mix-blend-mode: difference;
+    transition:1s;
+}
+.weather-text .location{
+    position:relative;
+    left:5vw;
+    height:20vh;
+    padding-right:100px;
+    text-align: center;
+}
+.wind-speed{
+    display:flex;
+    align-items: center;
+}
+.temperature{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.location{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.weather-info{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.line{
+    background:white;
+    height:20px;
+    width:2px;
+}
+.humidity-info{
+    display:flex;
+    align-items: center;
+}
+.description{
+    position: relative;
+    left:30vw;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    position:absolute;
+    left:30%;
+}
+input[type="submit"]{
+    width:30%;
+    height:5vh;
+    border-radius: 15px;
+    background:rgb(114, 161, 223);
+    transition: 1s;
+}
+input[type="submit"]:hover{
+    transform: translateX(-7px) translateY(-7px);
+    background:rgb(76, 140, 224) ;
+}
+input[type="submit"]:active{
+    transform: translateX(7px) translateY(7px);
+    background:rgb(161, 187, 221) ;
+}
+input[type="text"]{
+    height:5vh;
+}
+h1:hover{
+    letter-spacing: 0.1em;
+}
+h2:hover{
+    letter-spacing: 0.1em;
+}
+h3:hover{
+    letter-spacing: 0.1em;
+}
