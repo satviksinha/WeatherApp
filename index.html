@@ -48,19 +48,15 @@
            </form>
         </div>
     </div>
-    <!--
     <script>
-        var autocomplete;
         function initMap(){
-            autocomplete = new google.maps.places.Autocomplete(document.getElementById('city'),{
-                types: ['establishment'],
-                componentRestrictions : {'country':'IND'},
-                fields: ['place_id','geometry','name']
-            });
+            var inputElement = document.getElementById('city');
+            var autocomplete = new google.maps.places.Autocomplete(inputElement);
         }
     </script>
     <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8TvD268JLnSrH1T_JNzx3IOqCASK41dY&libraries=places&callback=initMap">-->
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8TvD268JLnSrH1T_JNzx3IOqCASK41dY&libraries=places&callback=initMap">
+</script>
 </script>
     <script src="script.js"></script>
 </body>

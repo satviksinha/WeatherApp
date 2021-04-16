@@ -22,7 +22,8 @@ window.addEventListener('load', function () {
             console.log(latitude, longitude);
 
              proxy = 'http://cors-anywhere.herokuapp.com/';
-            const api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=0a58d2ee648c39df86e275cd99e3610e`;
+            // proxy = 'https://thingproxy.freeboard.io/fetch/';
+            const api = `api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=0a58d2ee648c39df86e275cd99e3610e`;
 
             fetch(api).then(function(response){
                 return response.json();
@@ -42,7 +43,7 @@ window.addEventListener('load', function () {
     }
     form.addEventListener("submit",function(e){
         e.preventDefault();
-        var newapi = `${proxy}api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=0a58d2ee648c39df86e275cd99e3610e`;
+        var newapi = `api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=0a58d2ee648c39df86e275cd99e3610e`;
         fetch(newapi).then(function(res){
             return res.json();
         }).then(function(data){
